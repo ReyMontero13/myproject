@@ -1,11 +1,11 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom/client';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 
 const App = () => <h1>Hello from React!</h1>;
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+const root = createRoot(
+    document.getElementById("root") as HTMLElement
 );
 
 root.render(<App />);
